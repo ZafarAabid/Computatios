@@ -6,14 +6,23 @@ read -p "Enter third input:" input3
 
 
 function computation1() {
-	echo $(( $input1 + $input2 * $input3))
+	result=$(( $1 + $2 * $3))
+	echo $result
 }
 
-echo "Answer of computation1(input1+input2*input3) is : " "$( compution1 $input1 $input2 $input3 )"	
+computation1 $input1 $input2 $input3
 
 function computation2() {
-	echo $(( $input1 * $input2 + $input3))
+	result=$(( $1 * $2 + $3))
+	echo $result
 }
 
-echo "Answer of computation1(input1*input2+input3) is : " "$( compution2 $input1 $input2 $input3 )"	
+computation2 $input1 $input2 $input3
+
+function computation3() {
+	result=$(( $1 + $2 / 3))
+	echo $result
+	}
+
+computation3 $input1 $input2 $input3
 
