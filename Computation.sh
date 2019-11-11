@@ -26,3 +26,10 @@ function computation3() {
 
 computation3 $input1 $input2 $input3
 
+
+function computation4() {
+	result=$(( $1 % $2 + 3))
+	echo $result
+	}
+
+computation4 $input1 $input2 $input3
