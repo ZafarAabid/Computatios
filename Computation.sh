@@ -1,3 +1,6 @@
+#in this program we have to perform some computations and then we have to add it in Dictionary and Arrays,
+#after this we have to sort this
+
 #! /bin/bash -x
 
 read -p "Enter first input:" input1
